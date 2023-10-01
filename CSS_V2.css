@@ -1,0 +1,148 @@
+body {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  table {
+    border-collapse: separate;  /* Separate borders for table cells */
+    width: 75%;
+    table-layout: fixed;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
+  
+  td,tr{
+    height: 45px
+  }
+  
+  
+  th, td {
+    padding: 0px;
+  }
+  
+  th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    height: 40px
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;  /*makes even rows grey*/
+  }
+  
+  .slidecontainer {
+    width: 60%;
+    height: 55 px;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 10px;
+    border-radius: 10px;
+    margin: 0px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #5A5A5A;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #5A5A5A;
+    cursor: pointer;
+  }
+  
+  
+  .output { 
+    margin: 10px;
+    text-align: right;
+  }
+  
+  .avgtable {
+    border-collapse: separate; /* Separate borders for table cells */
+    width: 50%;
+    table-layout: fixed;
+    margin: 50px auto;
+    background-color: white;
+    margin-top: 17px;
+  }
+
+  
+  .form{
+    border:none;
+  }
+  
+  .col1{
+    width: 5%;
+  }
+  
+  .col2{
+    width: 22%;
+  }
+
+  .col3{
+    width: 22%;
+  }
+  
+  .col4{
+    width: 33%;
+  }
+  
+  .col5{
+    width: 18%;
+  }
+  
+  input[type="number"]
+{
+    font-family:'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #d3d3d3;
+    outline: none;
+    }
+
+
+  /* colors odd and even input boxes in white and grey respectively: */
+
+   #data-table tr:nth-child(odd) input[type='number'] {
+    background-color :white ; 
+  
+  }
+  #data-table tr:nth-child(even) input[type="number"] {
+    background-color :#f2f2f2 ; 
+  
+  }
+    
+  /*underlines the input boxes in green when it is clicked or hovered upon*/
+
+    input[type="number"]:hover{
+      border-bottom: 2px solid #6fb672;
+    }
+
+    input[type="number"]:focus {
+      border-bottom: 2px solid #6fb672;
+    }
